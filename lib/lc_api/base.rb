@@ -11,14 +11,12 @@ module LcApi
       options = args.slice!(0) || {}
 
       if options.has_key? :include
-        # options[:params] = (options[:params] || {}).merge({include: options[:include].join(",")})
         options[:params] = (options[:params] || {}).merge({include: options[:include].join(",")})
       end
 
 
       options[:params] = (options[:params] || {}).merge({key: LcApi.key})
-      # puts "options: #{options[:params]}"
-      # puts "options: #{options}"
+
       super(scope, options)
     end
   end
