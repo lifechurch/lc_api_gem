@@ -3,7 +3,9 @@
 A Ruby wrapper for the Lifechurch.tv REST API
 
 ## Installation
-  gem install lc-api
+```ruby
+gem install lc_api
+```
 
 ## Quick Start Guide
 First, register your application with LifeChurch.tv at http://api.lifechurch.tv.
