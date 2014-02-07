@@ -33,6 +33,14 @@ describe LcApi::Message do
     end
   end
 
+  describe "filtering by type" do
+    it "should include 'type=sermon' in the url" do
+      # If this test passes, that means the url below was correctly called, no need for any expects
+      FakeWeb.register_uri(:get, "#{SITE_URL}/messages.json?type=sermon&key=1111", :body => fixture('messages.json'))
+      LcApi::Message.find(:all, type: :sermon)
+    end
+  end
+
   describe "finding different formats" do
     describe ".audio" do
       it "returns the audio format" do
