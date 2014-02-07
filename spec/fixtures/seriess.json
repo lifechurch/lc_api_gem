@@ -1,0 +1,145 @@
+[{
+  "id": 1096,
+  "title": "Small Things Big Difference",
+  "description": "Major resolutions and huge goals. We want big change and we want it now. But maybe taking life in a new direction has a lot more to do with the little things. Let's learn how to embrace intentionality in Small Things, Big Difference.",
+  "hashtag": null,
+  "slug": "small-things",
+  "parts": 4,
+  "promo": null,
+  "viewable": true,
+  "start_date": "2014-01-04",
+  "end_date": "2014-01-26",
+  "type": "Sermon",
+  "images": [
+    {
+      "name": "224x160",
+      "url": "http:\/\/s3.amazonaws.com\/lcapi.production\/series\/small-things\/224x160.jpg?1391467308"
+    }
+  ],
+  "messages": [
+    {
+      "id": 9267,
+      "title": "Your Habits",
+      "part": 4,
+      "length": null,
+      "series_id": 1096,
+      "speaker_id": 98,
+      "resources_url": null,
+      "youversionlive_id": "http:\/\/m.youversion.com\/events\/302831",
+      "date_released": "2014-01-26",
+      "formats": [
+        {
+          "name": "High quality video",
+          "url": "http://wistia.com/high_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Low quality video",
+          "url": "http://wistia.com/low_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Audio",
+          "url": "http://wistia.com/audio.mp3",
+          "content_length": null,
+          "type": "audio"
+        }
+      ]
+    },
+    {
+      "id": 9266,
+      "title": "Your Words",
+      "part": 3,
+      "length": null,
+      "series_id": 1096,
+      "speaker_id": 98,
+      "resources_url": null,
+      "youversionlive_id": "http:\/\/m.youversion.com\/events\/300279",
+      "date_released": "2014-01-19",
+      "formats": [
+        {
+          "name": "High quality video",
+          "url": "http://wistia.com/high_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Low quality video",
+          "url": "http://wistia.com/low_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Audio",
+          "url": "http://wistia.com/audio.mp3",
+          "content_length": null,
+          "type": "audio"
+        }
+      ]
+    },
+    {
+      "id": 9265,
+      "title": "Your Thoughts",
+      "part": 2,
+      "length": null,
+      "series_id": 1096,
+      "speaker_id": 98,
+      "resources_url": null,
+      "youversionlive_id": "http:\/\/m.youversion.com\/events\/297880",
+      "date_released": "2014-01-12",
+      "formats": [
+        {
+          "name": "High quality video",
+          "url": "http://wistia.com/high_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Low quality video",
+          "url": "http://wistia.com/low_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Audio",
+          "url": "http://wistia.com/audio.mp3",
+          "content_length": null,
+          "type": "audio"
+        }
+      ]
+    },
+    {
+      "id": 9264,
+      "title": "Your One Word",
+      "part": 1,
+      "length": null,
+      "series_id": 1096,
+      "speaker_id": 98,
+      "resources_url": null,
+      "youversionlive_id": "http:\/\/m.youversion.com\/events\/293779",
+      "date_released": "2014-01-05",
+      "formats": [
+        {
+          "name": "High quality video",
+          "url": "http://wistia.com/high_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Low quality video",
+          "url": "http://wistia.com/low_vid.mp4",
+          "content_length": null,
+          "type": "video"
+        },
+        {
+          "name": "Audio",
+          "url": "http://wistia.com/audio.mp3",
+          "content_length": null,
+          "type": "audio"
+        }
+      ]
+    }
+  ]
+}]

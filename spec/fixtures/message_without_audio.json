@@ -1,0 +1,25 @@
+{
+  "id": 9267,
+  "title": "Your Habits",
+  "part": 4,
+  "length": null,
+  "series_id": 1096,
+  "speaker_id": 98,
+  "resources_url": null,
+  "youversionlive_id": "http:\/\/m.youversion.com\/events\/302831",
+  "date_released": "2014-01-26",
+  "formats": [
+    {
+      "name": "High quality video",
+      "url": "http://wistia.com/high_vid.mp4",
+      "content_length": null,
+      "type": "video"
+    },
+    {
+      "name": "Low quality video",
+      "url": "http://wistia.com/low_vid.mp4",
+      "content_length": null,
+      "type": "video"
+    }
+  ]
+}
