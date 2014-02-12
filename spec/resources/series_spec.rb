@@ -9,10 +9,18 @@ describe LcApi::Series do
     end
   end
 
-  describe "returning a single series" do
+  describe "returning a single series by id" do
     it "should return a series" do
       FakeWeb.register_uri(:get, "#{SITE_URL}/series/2.json?key=1111", :body => fixture("series.json"))
       @series = LcApi::Series.find(2)
+      expect(@series.class).to eq LcApi::Series
+    end
+  end
+
+  describe "returning a single series by slug" do
+    it "should return a series" do
+      FakeWeb.register_uri(:get, "#{SITE_URL}/series/series-slug-example.json?key=1111", :body => fixture("series.json"))
+      @series = LcApi::Series.find("series-slug-example")
       expect(@series.class).to eq LcApi::Series
     end
   end
@@ -39,6 +47,16 @@ describe LcApi::Series do
         FakeWeb.register_uri(:get, "#{SITE_URL}/series/2.json?include=messages&key=1111", :body => fixture("series.json"))
         series = LcApi::Series.find(2, include: [:messages])
         expect(series.messages.first.audio.url).to eq "http://wistia.com/audio.mp3"
+      end
+    end
+  end
+
+  describe "finding different images" do
+    describe ".find_image" do
+      it "should find the image" do
+        FakeWeb.register_uri(:get, "#{SITE_URL}/series/2.json?key=1111", :body => fixture("series.json"))
+        series = LcApi::Series.find(2)
+        expect(series.find_image("224x160").url).to eq "http://s3.amazonaws.com/lcapi.production/series/small-things/224x160.jpg?1391467308"
       end
     end
   end

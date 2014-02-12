@@ -15,7 +15,7 @@ module LcApi
     private
 
     def find_format(name)
-      (self.formats.select {|f| f.name.downcase.gsub(/\s+/, "_") == name.to_s.downcase}).first
+      (self.formats.detect {|f| f.name.downcase.gsub(/\s+/, "_") == name.to_s.downcase})
     end
   end
 end
