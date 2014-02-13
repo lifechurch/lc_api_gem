@@ -1,6 +1,6 @@
 module LcApi
   class Base < ActiveResource::Base
-    self.site = "http://lctv-api.herokuapp.com/v1"
+    self.site = "http://api.lifechurch.tv/v1"
 
     class << self
       attr_accessor :api_key
