@@ -12,6 +12,22 @@ module LcApi
       find_format(:low_quality_video)
     end
 
+    def self.latest(*args)
+      options = args.slice!(0) || {}
+      options[:params] = (options[:params] || {}).merge({include: options[:include].join(",")}) if options.has_key? :include
+      options[:params] = (options[:params] || {}).merge({key: LcApi.key})
+
+      Message.get(:latest, options[:params])
+    end
+
+    def self.previous(*args)
+      options = args.slice!(0) || {}
+      options[:params] = (options[:params] || {}).merge({include: options[:include].join(",")}) if options.has_key? :include
+      options[:params] = (options[:params] || {}).merge({key: LcApi.key})
+
+      Message.get(:previous, options[:params])
+    end
+
     private
 
     def find_format(name)
