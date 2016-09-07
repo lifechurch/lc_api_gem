@@ -28,6 +28,22 @@ module LcApi
       Message.get(:previous, options[:params])
     end
 
+    def self.this_week(*args)
+      options = args.slice!(0) || {}
+      options[:params] = (options[:params] || {}).merge({include: options[:include].join(",")}) if options.has_key? :include
+      options[:params] = (options[:params] || {}).merge({key: LcApi.key})
+
+      Message.get(:this_week, options[:params])
+    end
+
+    def self.last_week(*args)
+      options = args.slice!(0) || {}
+      options[:params] = (options[:params] || {}).merge({include: options[:include].join(",")}) if options.has_key? :include
+      options[:params] = (options[:params] || {}).merge({key: LcApi.key})
+
+      Message.get(:last_week, options[:params])
+    end
+
     private
 
     def find_format(name)
