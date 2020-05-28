@@ -1,9 +1,13 @@
 module LcApi
   class Base < ActiveResource::Base
-    self.site = "http://api.lifechurch.tv/v1"
+    self.site = "https://api.life.church/v1"
 
     class << self
       attr_accessor :api_key
+
+      def set_api_version(version = 'v1')
+        self.site = "https://api.life.church/#{version}"
+      end
     end
 
     def self.find(*args)

@@ -15,7 +15,12 @@ Then, copy and paste in your API Key.
 ```ruby
 LcApi.key = "K690FKW924CKUCJTH94WK294WK029834SDFJ9862KSDF9234SDKF9421KDVDS"
 ```
-
+Select Version by default it will be v1. You will need to set your version every model you extend from the LcApi Gem.
+For example on the website we have Series Locations and Messages they all inherit from LcApi Gem everyone of those Models
+has to have the version set IF you set it in one of them.
+```ruby
+LcApi::Base.set_api_version'v2'
+```
 Try finding a single resource:
 
 ```ruby
